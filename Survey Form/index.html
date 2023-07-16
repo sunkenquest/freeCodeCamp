@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name"required /></label>
+    <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your Email"required /></label>
+    <label for="age" id="number-label">Age<input id="number" type="number" min="13" max="120" placeholder="Age"/></label>
+    <label for="role">Which option best describes your current role?
+      <select id="dropdown" name="role" />
+        <option value="">Select current role</option>
+        <option value="1">Student</option> 
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">other</option> 
+      </select>
+    </label>
+    <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+    <section class="recommend">
+    <input id="recommend" type="radio" value="definitely" name="decision">Definitely
+    <input id="recommend" type="radio" value="maybe" name="decision">Maybe
+    <input id="recommend" type="radio" value="sure" name="decision">Sure
+    </section>
+    <label for="feature">Which option best describes your current role?
+      <select id="feature" name="feature" />
+        <option value="">Select an option</option>
+        <option value="1">Challenges</option> 
+        <option value="2">Projects</option>
+        <option value="3">Community</option>
+        <option value="4">Open Source</option>
+      </select>
+    </label>
+    <div class="improved">
+    <label for="improved">What would you like to see improved? (Check all that apply)</label>
+    <form>
+    <label for="apple"><input type="checkbox" id="apple" name="fruit" value="apple">Front-end Projects</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Back-end Projects</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Data Visualization</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Challenges</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Open Source Community</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Gitter Help Rooms</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Videos</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">City Meetups</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Wiki</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Forums</label>
+    <label for="banana"><input type="checkbox" id="banana" name="fruit" value="banana">Additional Courses</label>
+  </form>
+  <label for="comments">Any comments or suggestions?
+    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments hear"></textarea>
+  </label>
+  <input id="submit" type="submit" value="Submit">
+    </fieldset>
+    </form>
+  </body>
+</html>
